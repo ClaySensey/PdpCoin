@@ -98,4 +98,8 @@ public class CustomDataSource implements DataSource {
     public boolean isWrapperFor(Class<?> iface) throws SQLException {
         throw SQL_EXCEPTION;
     }
+
+    public String getDriver() {
+        return driver;
+    }
 }

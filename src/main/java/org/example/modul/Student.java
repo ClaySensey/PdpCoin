@@ -4,11 +4,11 @@ import lombok.*;
 
 import java.math.BigDecimal;
 
-@Getter
 @Setter
+@Getter
 @ToString
 @AllArgsConstructor
-public class Student extends Teacher {
+public class Student {
     private long chatId;
     private String fullname;
     private String Role;
@@ -28,44 +28,20 @@ public class Student extends Teacher {
         return grade;
     }
 
-    public void setGrade(BigDecimal grade) {
-        this.grade = grade;
-    }
-
-    public void setChatId(long chatId) {
-        this.chatId = chatId;
-    }
-
     public String getFullname() {
         return fullname;
-    }
-
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
     }
 
     public String getRole() {
         return Role;
     }
 
-    public void setRole(String role) {
-        Role = role;
-    }
-
     public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public BotState getState() {
         return BotState.valueOf(String.valueOf(state));
-    }
-
-    public void setState(BotState state) {
-        this.state = state;
     }
 
     public void add(Student newUser) {

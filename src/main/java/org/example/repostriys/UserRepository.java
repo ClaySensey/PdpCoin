@@ -92,5 +92,13 @@ public abstract class UserRepository {
 
     public abstract Student update(long id, Student updatedStudent);
 
-    public abstract void delete(long id);
+    public abstract User delete(long id);
+
+    public void create(String chatId, BotState state) {
+
+    }
+
+    public User getById(String chatId) {
+        return null;
+    }
 }

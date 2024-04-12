@@ -9,7 +9,7 @@ import org.example.modul.Role;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User extends Student {
     private long chatId;
     private String fullName;
     private Role role;

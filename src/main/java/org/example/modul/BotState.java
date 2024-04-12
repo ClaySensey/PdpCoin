@@ -1,5 +1,6 @@
 package org.example.modul;
 
 public enum BotState {
-    START
+    START,
+    REGISTER,
 }
