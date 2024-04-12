@@ -8,7 +8,7 @@ import org.example.repostriys.UserRepository;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private final UserRepository userRepository;
+    private UserRepository userRepository;
 
     public UserServiceImpl() {
         this.userRepository = userRepository;
