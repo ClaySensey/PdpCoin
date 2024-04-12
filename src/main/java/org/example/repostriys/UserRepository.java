@@ -68,6 +68,23 @@ public abstract class UserRepository {
             throw new RuntimeException(e);
         }
     }
+
+    public String getFindAllUsers() {
+        return findAllUsers;
+    }
+
+    public String getFindById() {
+        return findById;
+    }
+
+    public String getUpdateById() {
+        return updateById;
+    }
+
+    public String getInsertUser() {
+        return insertUser;
+    }
+
     public boolean getUpdateById(Long id, User user){
         try (
                 Connection connection = CustomDataSource.getInstance().getConnection();
