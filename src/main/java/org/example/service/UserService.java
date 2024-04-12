@@ -1,4 +1,4 @@
-package org.example.service;
+package org.example.Service;
 
 import org.example.modul.BotState;
 import org.example.modul.User;
