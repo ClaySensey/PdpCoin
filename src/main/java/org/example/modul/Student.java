@@ -3,11 +3,7 @@ package org.example.modul;
 import lombok.*;
 
 import java.math.BigDecimal;
-
-@Setter
-@Getter
 @ToString
-@AllArgsConstructor
 public class Student {
     private long chatId;
     private String fullname;
@@ -45,6 +41,6 @@ public class Student {
     }
 
     public void add(Student newUser) {
-
+        // bu nimaga kerak tushunmadim lekin o'chirmayman
     }
 }

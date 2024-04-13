@@ -20,4 +20,8 @@ public interface UserService{
     List<User> getAll();
     User update(long chatId, User user);
     User delete(long chatId);
+
+    org.telegram.telegrambots.meta.api.objects.User getUser(long chatId);
+
+    org.telegram.telegrambots.meta.api.objects.User create(org.telegram.telegrambots.meta.api.objects.User user);
 }

@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class User extends Student {
@@ -40,6 +39,11 @@ public class User extends Student {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    public User(long chatId, BotState botState) {
+        this.chatId = chatId;
+        this.botState = botState;
     }
 
     public BotState getBotState() {

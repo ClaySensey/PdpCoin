@@ -1,6 +1,6 @@
-package org.example.repostriys;
+package org.example.repositories;
 
-import org.example.Service.impl.CustomDataSource ;
+import org.example.util.CustomDataSource;
 import org.example.modul.Subject;
 
 import java.sql.*;
@@ -72,5 +72,10 @@ public class SubjectRepository {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public boolean updateSubjectById(Long id, Subject subject) {
+
+        return false;
     }
 }

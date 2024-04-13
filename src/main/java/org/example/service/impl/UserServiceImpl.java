@@ -3,15 +3,17 @@ package org.example.Service.impl;
 import org.example.Service.UserService   ;
 import org.example.modul.BotState;
 import org.example.modul.User;
-import org.example.repostriys.UserRepository;
+import org.example.repositories.UserRepository;
 
 import java.util.List;
 
-public class UserServiceImpl implements UserService {
+public abstract class UserServiceImpl implements UserService {
+    private final UserRepository UserRepository;
     private UserRepository userRepository;
 
     public UserServiceImpl() {
         this.userRepository = userRepository;
+        UserRepository = userRepository;
     }
 
     @Override

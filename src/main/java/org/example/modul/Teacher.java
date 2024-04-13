@@ -2,10 +2,7 @@ package org.example.modul;
 
 import lombok.*;
 
-@Getter
-@Setter
 @ToString
-@AllArgsConstructor
 public class Teacher {
     private long chatId;
     private String fullname;

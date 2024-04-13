@@ -1,6 +1,4 @@
-package org.example.Service.impl;
-
-import org.example.Service.impl.CustomConnector;
+package org.example.util;
 
 import javax.sql.DataSource;
 import java.io.IOException;
